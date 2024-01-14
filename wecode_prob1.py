@@ -23,7 +23,7 @@ s = datetime.datetime.now()
 
 
 def sold():
-    with open("/home/aban/Desktop/Python/problem solving/small_testcase2.txt", "r") as f:
+    with open("/home/aban/Desktop/Python/problem solving/large_testcase5.txt", "r") as f:
         maxi = None
         c = 1
         lookup = None
@@ -47,22 +47,11 @@ def sold():
                             maxi = maxi
                         else:
                             maxi = i
-                print(maxi)
                 print([k for k, v in res_map.items() if v == res_map[maxi]])
-                # print(list(res_map.keys()))
+
             c += 1
 
-# def solo():
-#     with open("/home/aban/Desktop/Python/problem solving/large_testcase2.txt", "r") as f:
-#         maxi = None
-#         c = 1
-#         lookup = None
-#         hash_map = {}
-#         res_map = {}
-#         for item in f:
-#             if c == 3:
-#                 json.loads(item)
-#             c += 1
+
 sold()
 
 
